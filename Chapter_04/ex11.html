@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>4장 연습문제 116p - 11번</title>
+</head>
+<body>
+    <form>
+        <h1>글 작성하기</h1>
+        <table>
+            <tr>
+                <th>작성자</th>
+                <td><input type="text" name="writer"></td>
+            </tr>
+            <tr>
+                <th>아이디</th>
+                <td><input type="text" name="id"></td>
+            </tr>
+            <tr>
+                <th>이메일</th>
+                <td>
+                    <input type="email" name="email" id="email">@<input type="email" name="email">
+                </td>
+            </tr>
+            <tr>
+                <th>휴대폰</th>
+                <td>
+                    <select name="phone_pre">
+                        <option>010</option>
+                        <option>011</option>
+                        <option>016</option>
+                        <option>017</option>
+                        <option>018</option>
+                        <option>019</option>
+                    </select>
+                    <input type="text" name="phone1">-<input type="text" name="phone2">
+                </td>
+            </tr>
+            <tr>
+                <th>글제목</th>
+                <td><input type="text" name="topic_name"></td>
+            </tr>
+            <tr>
+                <th>내용</th>
+                <td><textarea name="context" cols="30" rows="10"></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="제출"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
