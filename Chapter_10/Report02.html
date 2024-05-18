@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>Clock</title>
+	<script>
+		window.onload = function () {
+			let clock_Object = document.getElementById('clock');
+			
+			setInterval(function () {
+				let currentTime = new Date();
+				clock_Object.innerHTML = currentTime.toString();
+			}, 1000);
+		};
+	</script>
+</head>
+<body>
+	<h1 id="clock"></h1>
+</body>
+</html>
