@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>12장 코드 12-7번</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            let addDocument = function() {
+                for(let i = 0; i < 20; i++) {
+                    $('<h1>Infinity Scroll</h1>').appendTo('body');
+                }
+            };
+
+            addDocument();
+            
+            $(window).scroll(function() {
+                if($(document).height() == $(window).scrollTop() + $(window).height()) {
+                    addDocument();
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+</body>
+</html>

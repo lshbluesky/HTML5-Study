@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>10장 코드 10-13번</title>
+    <script>
+        window.onload = function() {
+            let clockObj = document.querySelector('h1');
+
+            setInterval(function() {
+                let currentTime = new Date();
+                clockObj.innerHTML = currentTime.toString();
+            }, 1000);
+        };
+    </script>
+</head>
+<body>
+    <h1></h1>
+</body>
+</html>
